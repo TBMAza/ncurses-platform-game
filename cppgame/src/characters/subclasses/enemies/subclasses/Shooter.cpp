@@ -16,7 +16,7 @@ int Shooter::shoot()
 
 void Shooter::jump()
 {
-    // ask chatgpt
+    // TODO
 };
 
 void Shooter::reach(int player_x)
