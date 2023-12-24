@@ -18,5 +18,5 @@ void Follower::chase(int player_x)
 
 void Follower::jump()
 {
-    // ask chatgpt
+    // TODO
 };
