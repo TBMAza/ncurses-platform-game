@@ -16,6 +16,8 @@ class Runner: public Enemy
 
         Runner();
         Runner(int y, int x);
+
+        void changedir(); // if the Runner gets on the edge of a pit, is called to reverse his direction
 };
 
 #endif
