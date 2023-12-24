@@ -67,7 +67,7 @@ void Player::incrinv()
 
 void Player::jump()
 {
-    // ask chatgpt to implement jump and gravity
+    // TODO
 };
 
 int Player::shoot()
