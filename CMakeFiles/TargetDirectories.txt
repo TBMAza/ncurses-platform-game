@@ -1,0 +1,3 @@
+/Users/alfahad.asaduz/C++/cppgame/CMakeFiles/Game.dir
+/Users/alfahad.asaduz/C++/cppgame/CMakeFiles/edit_cache.dir
+/Users/alfahad.asaduz/C++/cppgame/CMakeFiles/rebuild_cache.dir
