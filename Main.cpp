@@ -1,5 +1,8 @@
 #include <ncurses.h>
+#include <iostream>
 #include "constants.hpp"
+
+#include "CollisionDetector.hpp"
 
 #include "headers/map_elements/subclasses/Floor.hpp"
 #include "headers/map_elements/subclasses/Cash.hpp"
@@ -12,53 +15,76 @@
 
 #include "headers/characters/subclasses/player/Player.hpp"
 
-int main()
-{
+void drawPlayer(int x, int y, chtype asp) {
+    mvaddch(y, x, asp);
+}
+
+int main() {
+    // Initialize ncurses
     initscr();
     raw();
-    noecho();
-    cbreak();
+    keypad(stdscr, TRUE);
     curs_set(0);
-    
-    keypad(stdscr, true);
-    box(stdscr, 0, 0);
-
-    for(int i = 1; i < 79; i++)
-        {
-            mvaddch(22, i, FLOOR);
-        }
+    noecho();
 
     Player player;
 
-    while(true)
-    {
-        refresh();
+    // Game loop
+    while (true) {
+        clear();
+        box(stdscr, 0, 0);
         
-        mvaddch(player.getpos_y(), player.getpos_x(), player.getaspect());
-        
-        chtype input = getch();
-        switch(input)
+        for(int i = 1; i < getmaxx(stdscr)-1; i++)
         {
-            case KEY_RIGHT:
-                if(player.getpos_x() < 78)
-                {
-                    mvaddch(player.getpos_y(), player.getpos_x(), EMPTY);
-                    player.mvright();
-                }
-            break;
-
-            case KEY_LEFT:
-                if(player.getpos_x() > 1)
-                {
-                    mvaddch(player.getpos_y(), player.getpos_x(), EMPTY);
-                    player.mvleft();
-                }
-            break;
-
-            default:
+            mvaddch(22, i, FLOOR);
         }
+        for(int i = 10; i < 20; i++)
+        {
+            mvaddch(20, i, FLOOR);
+        }
+        for(int i = 22; i < 30; i++)
+        {
+            mvaddch(18, i, FLOOR);
+        }
+        for(int i = 32; i < 40; i++)
+        {
+            mvaddch(16, i, FLOOR);
+        }
+
+        // Draw player
+        drawPlayer(player.getpos_x(), player.getpos_y(), player.getaspect());
+
+        // Check for user input
+        int ch = getch();
+        switch (ch)
+        {
+            case KEY_LEFT:
+                if(player.getpos_x() > 1) player.mvleft();
+            break;
+            
+            case KEY_RIGHT:
+                if(player.getpos_x() < 78) player.mvright();
+            break;
+            
+            case SPACEBAR: // Spacebar for jumping
+                if (player.getjumpstate() == NOT_JUMPING && player.getfallstate() == NOT_FALLING) {
+                    player.setjumpstate(JUMPING);
+                }
+            break;
+            
+            case 'q': // Quit the game
+                endwin();
+                return 0;
+        }
+
+        // Apply gravity if jumping
+        player.jump();
+        player.fall();
+
+        // Render
+        refresh();
     }
 
-    getch();
     endwin();
+    return 0;
 }
