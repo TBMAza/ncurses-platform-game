@@ -13,6 +13,8 @@ void Player::init()
     this->active_projectile = BULLET_RIGHT;
     this->forcefield_qty = PLAYER_INIT_PWUPS_QTY;
     this->invisibility_qty = PLAYER_INIT_PWUPS_QTY;
+    this->jumpstate = NOT_JUMPING;
+    this->fallstate = NOT_FALLING;
 };
 
 int Player::getcash()
@@ -33,6 +35,16 @@ chtype Player::getactiveproj()
 int Player::getffqty()
 {
     return forcefield_qty;
+};
+
+short Player::getjumpstate()
+{
+    return this->jumpstate;
+}
+
+short Player::getfallstate()
+{
+    return this->fallstate;
 };
 
 void Player::setaspect(chtype asp)
@@ -65,9 +77,43 @@ void Player::incrinv()
     (this->invisibility_qty)++;
 };
 
+void Player::setjumpstate(short js)
+{
+    this->jumpstate = js;
+};
+
 void Player::jump()
 {
-    // TODO
+    if (this->jumpstate == JUMPING)
+    {
+        static int jumpforce = MAX_JUMPFORCE;
+        static int sign = 1;
+        
+        if(jumpforce < 0) sign = -1;
+        this->pos_y -= GRAVITY * sign;
+        jumpforce -= GRAVITY;
+        
+        if (CollisionDetector::retrieve((this->pos_y)+1, this->pos_x) == FLOOR)
+        {
+            this->jumpstate = NOT_JUMPING;
+            jumpforce = MAX_JUMPFORCE;
+            sign = 1;
+        }
+    }
+};
+
+void Player::fall()
+{
+    if(CollisionDetector::retrieve((this->pos_y)+1, this->pos_x) != FLOOR && this->jumpstate == NOT_JUMPING)
+    {
+        this->fallstate = FALLING;
+        this->pos_y += GRAVITY;
+    }
+    if(this->pos_y >= PLAYER_INIT_POS_Y)
+    {
+        this->pos_y = PLAYER_INIT_POS_Y;
+        this->fallstate = NOT_FALLING;
+    }
 };
 
 chtype Player::shoot()
