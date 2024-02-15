@@ -99,7 +99,7 @@ There are five classes of enemies:
   
   <img src="readme_imgs/runner.png" title="" alt="" width="240">
 
-- Chaser
+- Charger
   
   <img src="readme_imgs/charger.png" title="" alt="" width="258">
 
