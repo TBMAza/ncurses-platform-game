@@ -26,7 +26,7 @@ Make sure that `ncurses` library is installed in your system, then follow the st
 
 ### Generalities
 
-<img src="file:readme_imgs/general.png">
+<img src="readme_imgs/general.png">
 
 The map is made of blank spaces and `=` characters that represent the floor, over which the Player and the enemies can walk, wheter it is the main floor or the floating blocks. If the Player or an enemy reaches the egde of a floating block, he will fall. If they go over the pits in the main floor, they will die.
 
