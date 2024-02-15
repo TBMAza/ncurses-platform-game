@@ -32,11 +32,11 @@ The map is made of blank spaces and `=` characters that represent the floor, ove
 
 The Player is represented by `@`, but he can shift shapes based on some active power-ups; for example, when he activates `FORCEFIELD` he looks like this:
 
-<img src="file:///Users/alfahad.asaduz/C++/cppgame/readme_imgs/forcefield.png" title="" alt="" width="97">
+<img src="readme_imgs/forcefield.png" title="" alt="" width="97">
 
 when he activates `VANISHER` he looks like this:
 
-<img src="file:///Users/alfahad.asaduz/C++/cppgame/readme_imgs/vanisher.png" title="" alt="" width="97">
+<img src="readme_imgs/vanisher.png" title="" alt="" width="97">
 
 When FORCEFIELD is active, any enemy that will approach the player will be killed instantly, without the Player getting contact damage.
 
@@ -46,7 +46,7 @@ At the top-left part of the window there is a health bar and inventory stats of 
 
 The green `$` symbols are collectable cash that you can use to buy power-ups and restore health in the `market menu`:
 
-![](/Users/alfahad.asaduz/C++/cppgame/readme_imgs/market.png)
+![](readme_imgs/market.png)
 
 The stats remain visible in the market menu in order for the Player to see the inventory state while he is buying new things.
 
@@ -55,13 +55,13 @@ The stats remain visible in the market menu in order for the Player to see the i
 Besides the market, you will find other 3 types of menus
 
 - Pause menu
-  ![](/Users/alfahad.asaduz/C++/cppgame/readme_imgs/pause.png)
+  ![](readme_imgs/pause.png)
 
 - Game over menu
-  ![](/Users/alfahad.asaduz/C++/cppgame/readme_imgs/gameover.png)
+  ![](readme_imgs/gameover.png)
 
 - Main menu
-  ![](/Users/alfahad.asaduz/C++/cppgame/readme_imgs/mainmenu.png)
+  ![](readme_imgs/mainmenu.png)
 
 You can access the `pause menu` anytime during the game. From this menu, if you resume, you will get back to your game and find in exactly as you left. If you decide to go to the main menu, the game will be automatically saved and you will be able to return to the exact game `Continue` from the main menu.
 
@@ -75,19 +75,19 @@ The Player and the `Shooter` are the only characters that can shoot projectiles.
 
 - Bullet
   
-  <img src="file:///Users/alfahad.asaduz/C++/cppgame/readme_imgs/bullet.png" title="" alt="" width="230">
+  <img src="readme_imgs/bullet.png" title="" alt="" width="230">
 
 - Superbullet
   
-  <img src="file:///Users/alfahad.asaduz/C++/cppgame/readme_imgs/superbullet.png" title="" alt="" width="206">
+  <img src="readme_imgs/superbullet.png" title="" alt="" width="206">
 
 - Hyperbullet
   
-  <img src="file:///Users/alfahad.asaduz/C++/cppgame/readme_imgs/hyperbullet.png" title="" alt="" width="237">
+  <img src="readme_imgs/hyperbullet.png" title="" alt="" width="237">
 
 - Laser
   
-  <img src="file:///Users/alfahad.asaduz/C++/cppgame/readme_imgs/laser.png" title="" alt="" width="252">
+  <img src="readme_imgs/laser.png" title="" alt="" width="252">
   
   Being so powerful, the Laser is available only till level 10 and removed for the player afterwards.
 
@@ -97,20 +97,20 @@ There are five classes of enemies:
 
 - Runner
   
-  <img src="file:///Users/alfahad.asaduz/C++/cppgame/readme_imgs/runner.png" title="" alt="" width="240">
+  <img src="readme_imgs/runner.png" title="" alt="" width="240">
 
 - Chaser
   
-  <img src="file:///Users/alfahad.asaduz/C++/cppgame/readme_imgs/charger.png" title="" alt="" width="258">
+  <img src="readme_imgs/charger.png" title="" alt="" width="258">
 
 - Follower
-  ![](/Users/alfahad.asaduz/C++/cppgame/readme_imgs/follower.png)
+  ![](readme_imgs/follower.png)
 
 - Chaser
-  ![](/Users/alfahad.asaduz/C++/cppgame/readme_imgs/chaser.png)
+  ![](readme_imgs/chaser.png)
 
 - Shooter
-  ![](/Users/alfahad.asaduz/C++/cppgame/readme_imgs/shooter.png)
+  ![](readme_imgs/shooter.png)
 
 Runner and Chaser have the same behavior: they are not aware of the Player, the can't jump and they move straight. When they reach the egde of a pit or a floating block, they change direction. If the player hits a Runner, he gets some damage. If he hits the Charger, he gets killed.
 
