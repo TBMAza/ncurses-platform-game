@@ -19,7 +19,7 @@ Make sure that `ncurses` library is installed in your system, then follow the st
 
 ### To run
 
-- Remainind in the `cppgame` directory, run `./Game` command;
+- Remaining in the `cppgame` directory, run `./Game` command;
   e.g. : `user@host [cppgame] $: ./Game`
 
 ### 
