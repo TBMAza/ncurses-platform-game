@@ -15,6 +15,8 @@ Make sure that `ncurses` library is installed in your system, then follow the st
 
 - Run `make` command
 
+- Run `make clean` to remove object files
+
 ### 
 
 ### To run
