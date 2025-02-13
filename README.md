@@ -42,7 +42,7 @@ when he activates `VANISHER` he looks like this:
 
 When FORCEFIELD is active, any enemy that will approach the player will be killed instantly, without the Player getting contact damage.
 
-When VANISHER is active, enemies won't be able to shoot him, thus wou't follow him nor shoot him.
+When VANISHER is active, enemies won't be able to see him, thus won't follow him nor shoot him.
 
 At the top-left part of the window there is a health bar and inventory stats of the player; at the top-right you have the current level and the points you scored; points are scored killing enemies.
 
