@@ -69,7 +69,7 @@ You can access the `pause menu` anytime during the game. From this menu, if you 
 
 The `game over menu` appears whenever you die and it displays the cause of death. If you decide to respawn, you will restart from the same level you died in and loose all the point you accumulated in that level. Your cash will remain intact though.
 
-The `main menu` is the one you encounter when you start the program. Therein you can choose to launch a new game (and this choice will overwrite any previous saved game if there are any), you can load a saved game (`Continue`) or exit the program. You can access the main menu at any moment during the game with the following sequence: press `Q` to enter the pause menu, select `Main menu`. It is highly recommended that whenever you want to close the program you do it through the `Exit` option from the main menu, because this way you ensure that all the heap memory used by the game is deallocated.
+The `main menu` is the one you encounter when you start the program. Therein you can choose to launch a new game (and this choice will overwrite any previous saved game if there are any), you can load a saved game (`Continue`) or exit the program. You can access the main menu at any moment during the game with the following sequence: press `Q` to enter the pause menu, select `Main menu`. It is highly recommended that whenever you want to close the program you do it through the `Exit` option from the main menu, because this way ensures that all the heap memory used by the game is deallocated.
 
 ### Projectiles
 
