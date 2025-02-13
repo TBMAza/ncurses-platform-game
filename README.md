@@ -119,7 +119,7 @@ There are five classes of enemies:
 
 Runner and Charger have the same behavior: they are not aware of the Player, the can't jump and they move straight. When they reach the egde of a pit or a floating block, they change direction. If the player hits a Runner, he gets some damage. If he hits the Charger, he gets killed.
 
-Follower and Chaser also have the same behaviour: they both chase the player until they come in contact with him dealing damage. If the Follower hits the player, the player receives some damage. If a Chaser hits him, he gets killed.
+Follower and Chaser also have the same behavior: they both chase the player until they come in contact with him dealing damage. If the Follower hits the player, the player receives some damage. If a Chaser hits him, he gets killed.
 
 The Shooter can track the Player and will try to reach him until he is from the player at a distance where the projectiles are in range to reach the player, then he shoots. As the game level increases, the Shooter gets more health and more powerful bullets.
 
