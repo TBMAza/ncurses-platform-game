@@ -106,19 +106,22 @@ There are five classes of enemies:
   <img src="readme_imgs/charger.png" title="" alt="" width="258">
 
 - Follower
-  ![](readme_imgs/follower.png)
+
+  <img src="readme_imgs/follower.png" title="" alt="" width="258">
 
 - Chaser
-  ![](readme_imgs/chaser.png)
+
+  <img src="readme_imgs/chaser.png" title="" alt="" width="258">
 
 - Shooter
-  ![](readme_imgs/shooter.png)
 
-Runner and Chaser have the same behavior: they are not aware of the Player, the can't jump and they move straight. When they reach the egde of a pit or a floating block, they change direction. If the player hits a Runner, he gets some damage. If he hits the Charger, he gets killed.
+  <img src="readme_imgs/shooter.png" title="" alt="" width="258">
 
-Follower and Chasers also have the same behaviour: they both chase the player until they come in contact with him dealing damage. If the Follower hits the player, the player receives some damage. If a Chaser hits him, he gets killed.
+Runner and Charger have the same behavior: they are not aware of the Player, the can't jump and they move straight. When they reach the egde of a pit or a floating block, they change direction. If the player hits a Runner, he gets some damage. If he hits the Charger, he gets killed.
 
-The shooter can track the Player and will try to reach him until he is from the player at a distance where the projectiles are in range to reach the player, then he shoots. As the game level increases, the Shooter gets more health and more powerful bullets.
+Follower and Chaser also have the same behaviour: they both chase the player until they come in contact with him dealing damage. If the Follower hits the player, the player receives some damage. If a Chaser hits him, he gets killed.
+
+The Shooter can track the Player and will try to reach him until he is from the player at a distance where the projectiles are in range to reach the player, then he shoots. As the game level increases, the Shooter gets more health and more powerful bullets.
 
 ### Objective
 
