@@ -65,7 +65,7 @@ Besides the market, you will find other 3 types of menus
 - Main menu
   ![](readme_imgs/mainmenu.png)
 
-You can access the `pause menu` anytime during the game. From this menu, if you resume, you will get back to your game and find in exactly as you left. If you decide to go to the main menu, the game will be automatically saved and you will be able to return to the exact game `Continue` from the main menu.
+You can access the `pause menu` anytime during the game. From this menu, if you resume, you will get back to your game and find in exactly as you left. If you decide to go to the main menu, the game will be automatically saved and you will be able to return to it by selecting `Continue` from the main menu.
 
 The `game over menu` appears whenever you die and it displays the cause of death. If you decide to respawn, you will restart from the same level you died in and loose all the point you accumulated in that level. Your cash will remain intact though.
 
