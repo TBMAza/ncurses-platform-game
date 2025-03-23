@@ -10,8 +10,8 @@ Make sure that `ncurses` library is installed in your system, then follow the st
 
 - Open terminal
 
-- Change directory to the `cppgame` folder; 
-  e.g. : `user@host [/] $: cd path/cppgame`
+- Change directory to the `ncurses-platform-game-main` folder; 
+  e.g. : `user@host [/] $: cd path/ncurses-platform-game-main`
 
 - Run `make` command
 
@@ -21,8 +21,8 @@ Make sure that `ncurses` library is installed in your system, then follow the st
 
 ### To run
 
-- Remaining in the `cppgame` directory, run `./Game` command;
-  e.g. : `user@host [cppgame] $: ./Game`
+- Remaining in the `ncurses-platform-game-main` directory, run `./Game` command;
+  e.g. : `user@host [ncurses-platform-game-main] $: ./Game`
 
 ### 
 
